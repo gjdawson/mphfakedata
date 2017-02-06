@@ -7,9 +7,6 @@ var amqpurl = process.env.MUON_URL || "amqp://muon:microservices@rabbitmq"
 var muon = muoncore.create('sensors', amqpurl);
 
 function perform() {
-    console.log(s);
-
-
     var rand = Math.round(Math.random() * 5000) + 1000;
     setTimeout(function () {
         let s = sensors[Math.floor(Math.random() * sensors.length)].slice();
