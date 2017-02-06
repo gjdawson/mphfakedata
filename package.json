@@ -9,7 +9,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "devdeploy": "rsync -Pav -e 'ssh -i /home/graham/keys/dawsoaa5root.pem -p 2223' /home/graham/development/websites/managemycarehome.com/mmcsources/. adaptos@localhost:/home/adaptos/server --exclude=\"*.iml\" --exclude=\".idea\"",
+    "devdeploy": "rsync -Pav -e 'ssh -i /home/graham/keys/dawsoaa5root.pem -p 2224' /home/graham/development/websites/managemycarehome.com/mmcsources/. user@localhost:/home/user/docker/deploy/sources --exclude=\"*.iml\" --exclude=\".idea\" --exclude=\".git\"",
     "start": "node fakedata.js"
   },
   "author": "Graham Dawson <graham.dawson@simplicityitself.com> (http://simplicityitself.com/)",
