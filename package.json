@@ -1,0 +1,32 @@
+{
+  "name": "managemycarehome.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type":"git",
+    "url":"https://github.com/gjdawson/mphfakedata"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devdeploy": "rsync -Pav -e 'ssh -i /home/graham/keys/dawsoaa5root.pem -p 2223' /home/graham/development/websites/managemycarehome.com/mmcsources/. adaptos@localhost:/home/adaptos/server --exclude=\"*.iml\" --exclude=\".idea\"",
+    "start": "node fakedata.js"
+  },
+  "author": "Graham Dawson <graham.dawson@simplicityitself.com> (http://simplicityitself.com/)",
+  "license": "ISC",
+  "dependencies": {
+    "webpack": "^1.14.0",
+    "muon-core": "*",
+    "muonjs":"*"
+  },
+
+  "devDependencies" : {
+    "babel-core": "*",
+    "babel-loader": "*",
+    "babel-preset-es2015": "*",
+    "babel-preset-react": "*",
+    "babel-preset-stage-0": "*",
+    "json-loader" : "*",
+    "webpack-dev-server": "*"
+  }
+}
