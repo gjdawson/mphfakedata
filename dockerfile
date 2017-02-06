@@ -1,6 +1,7 @@
-FROM simplicityitself-muon-image.jfrog.io/node:7
+FROM mhart/alpine-node:7.5.0
 
-WORKDIR /applocal
-COPY . /applocal
+WORKDIR /app
+COPY . /app
+RUN npm install
 
 CMD ./run.sh
