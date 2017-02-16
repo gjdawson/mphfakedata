@@ -16,17 +16,12 @@
   "license": "ISC",
   "dependencies": {
     "webpack": "^1.14.0",
-    "muon-core": "*",
-    "muonjs":"*"
+    "muon-core": "^7.1.16"
   },
 
   "devDependencies" : {
-    "babel-core": "*",
-    "babel-loader": "*",
-    "babel-preset-es2015": "*",
-    "babel-preset-react": "*",
-    "babel-preset-stage-0": "*",
-    "json-loader" : "*",
-    "webpack-dev-server": "*"
+    "babel-cli": "^6.18.0",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-preset-es2015": "^6.18.0",
   }
 }
